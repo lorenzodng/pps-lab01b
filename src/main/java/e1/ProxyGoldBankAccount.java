@@ -1,22 +1,11 @@
 package e1;
 //proxy
-public class ProxyGoldBankAccount implements BankAccount {
+public class ProxyGoldBankAccount extends ProxyBankAccount {
 
-    private final BankAccount bankAccount;
     private static final int FIDO= 500;
 
-    public ProxyGoldBankAccount(BankAccount bankAccount){
-        this.bankAccount= bankAccount;
-    }
-
-    @Override
-    public int getBalance() {
-        return bankAccount.getBalance();
-    }
-
-    @Override
-    public void deposit(int amount) {
-        bankAccount.deposit(amount);
+    protected ProxyGoldBankAccount(BankAccount bankAccount) {
+        super(bankAccount);
     }
 
     @Override

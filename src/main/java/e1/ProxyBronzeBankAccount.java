@@ -1,21 +1,9 @@
 package e1;
 //proxy
-public class ProxyBronzeBankAccount implements BankAccount {
+public class ProxyBronzeBankAccount extends ProxyBankAccount{
 
-    private final BankAccount bankAccount;
-
-    public ProxyBronzeBankAccount(BankAccount bankAccount){
-        this.bankAccount= bankAccount;
-    }
-
-    @Override
-    public int getBalance() {
-       return bankAccount.getBalance();
-    }
-
-    @Override
-    public void deposit(int amount) {
-        bankAccount.deposit(amount);
+    protected ProxyBronzeBankAccount(BankAccount bankAccount) {
+        super(bankAccount);
     }
 
     @Override

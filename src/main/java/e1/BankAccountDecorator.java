@@ -1,10 +1,11 @@
 package e1;
 //abstract decorator
-public abstract class BankAccountDecorator implements BankAccount{
+public abstract class BankAccountDecorator extends BronzeBankAccount{
 
     private final BankAccount decoratedBankAccount;
 
-    public BankAccountDecorator(BankAccount decoratedBankAccount){
+    public BankAccountDecorator(BronzeBankAccount decoratedBankAccount){
+        super(decoratedBankAccount.getBalance());
         this.decoratedBankAccount= decoratedBankAccount;
     }
 
