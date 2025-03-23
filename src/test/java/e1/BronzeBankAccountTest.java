@@ -11,9 +11,9 @@ class BronzeBankAccountTest {
     private BronzeBankAccount bronzeBankAccount;
 
     @BeforeEach
-    void init() {
-        int balance = 200;
-        bronzeBankAccount= new BronzeBankAccount(balance);
+    void beforeEach() {
+        int initialBalance = 200;
+        bronzeBankAccount= new BronzeBankAccount(initialBalance);
     }
 
     @Test

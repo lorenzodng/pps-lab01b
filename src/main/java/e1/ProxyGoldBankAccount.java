@@ -2,8 +2,8 @@ package e1;
 //proxy
 public class ProxyGoldBankAccount implements BankAccount {
 
-    private BankAccount bankAccount;
-    private final int FIDO= 500;
+    private final BankAccount bankAccount;
+    private static final int FIDO= 500;
 
     public ProxyGoldBankAccount(BankAccount bankAccount){
         this.bankAccount= bankAccount;

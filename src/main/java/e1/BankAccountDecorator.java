@@ -2,7 +2,7 @@ package e1;
 //abstract decorator
 public abstract class BankAccountDecorator implements BankAccount{
 
-    private BankAccount decoratedBankAccount;
+    private final BankAccount decoratedBankAccount;
 
     public BankAccountDecorator(BankAccount decoratedBankAccount){
         this.decoratedBankAccount= decoratedBankAccount;

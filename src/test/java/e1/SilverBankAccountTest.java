@@ -11,9 +11,9 @@ class SilverBankAccountTest {
     private SilverBankAccount silverBankAccount;
 
     @BeforeEach
-    void init() {
-        int balance = 200;
-        silverBankAccount = new SilverBankAccount(balance);
+    void beforeEach() {
+        int initialBalance = 200;
+        silverBankAccount = new SilverBankAccount(initialBalance);
     }
 
     @Test

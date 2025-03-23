@@ -2,7 +2,7 @@ package e1;
 //proxy
 public class ProxySilverBankAccount implements BankAccount {
 
-    private BankAccount bankAccount;
+    private final BankAccount bankAccount;
 
     public ProxySilverBankAccount(BankAccount bankAccount){
         this.bankAccount= bankAccount;

@@ -2,7 +2,7 @@ package e1;
 //concrete decorator
 public class FeeDecorator extends BankAccountDecorator {
 
-    private static final double WITHDRAWAL_WITH_FEE= 100;
+    private static final int WITHDRAWAL_WITH_FEE= 100;
     private static final int FEE_BRONZE_BANK_ACCOUNT= 1;
 
     public FeeDecorator(BankAccount bankAccount) {

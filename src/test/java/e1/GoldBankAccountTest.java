@@ -10,9 +10,9 @@ class GoldBankAccountTest {
     private GoldBankAccount goldBankAccount;
 
     @BeforeEach
-    void init(){
-        int balance = 200;
-        goldBankAccount= new GoldBankAccount(balance);
+    void beforeEach(){
+        int initialBalance = 200;
+        goldBankAccount= new GoldBankAccount(initialBalance);
     }
 
     @Test
